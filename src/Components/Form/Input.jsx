@@ -9,7 +9,7 @@ const Input = ({ id, name, type = 'text', label, placeholder }) => {
         name={name}
         type={type}
         placeholder={placeholder}
-        className="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+        className="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-400/40"
       />
     </div>
   );
