@@ -33,7 +33,7 @@ const Header = () => {
       >
         <div
           onClick={closeMenu}
-          className={`inset-0 bg-verde-950/40 backdrop:blur-md ${menuMobile ? 'fixed' : 'hidden'}`}
+          className={`inset-0 bg-verde-950/40 backdrop-blur-md ${menuMobile ? 'fixed' : 'hidden'}`}
         ></div>
 
         <ul className="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full lg:flex lg:flex-wrap lg:gap-8 lg:text-xl animate-slide-in opacity-0">
