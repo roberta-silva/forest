@@ -1,16 +1,23 @@
-import florestaImg from '../assets/img/floresta.jpg';
-// import Wildbeast from '../assets/img/parceiros/wildbeast.svg?react';
 import wildbeastImg from '../assets/img/parceiros/wildbeast.svg';
+import { random } from '../Utilities/weather';
+import chuva from '../assets/videos/video_chuva.mp4';
+import sol from '../assets/videos/video_sol.mp4';
 
 const HeroSection = () => {
   return (
     <main className="container">
       <div className="relative px-4 sm:px-8 pb-8 pt-12 sm:pt-64 bg-linear-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden">
-        <img
-          className="absolute inset-0 size-full object-cover -z-10"
-          src={florestaImg}
-          alt=""
+        <video
+          className="absolute inset-0 size-full object-cover -z-10 animate-fadeIn"
+          muted
+          autoPlay
+          playsInline
+          loop
+          width="1280"
+          height="720"
+          src={random < 25 ? chuva : sol}
         />
+
         <div className="bg-verde-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-verde-950 sm:inline-flex sm:flex-row sm:rounded-full">
           vagas para dezembro abertas
           <a

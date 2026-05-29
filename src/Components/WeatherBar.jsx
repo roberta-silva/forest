@@ -1,3 +1,11 @@
+import { random } from '../Utilities/weather';
+
+const hoje = new Date()
+  .toLocaleDateString('pt-BR', {
+    weekday: 'long',
+  })
+  .replace('-feira', '');
+
 const WeatherBar = () => {
   return (
     <div className="container mt-4 flex justify-center md:justify-start">
@@ -5,18 +13,17 @@ const WeatherBar = () => {
         <span className="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
         <div className="flex text-verde-300 divide-x-2 divide-verde-800">
           <div className="px-4 py-2 capitalize" id="dia">
-            segunda
+            {hoje}
           </div>
           <div className="px-4 py-2" id="temperatura">
-            25°
+            {random}°
           </div>
           <div className="px-4 py-2" id="tempo">
-            ☀️
+            {random < 25 ? `🌧️ ${random + 5}%` : `🌤️${random + 5}%`}
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default WeatherBar;
