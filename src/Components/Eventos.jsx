@@ -13,7 +13,7 @@ const eventos = [
     dia: '15',
     mes: 'Abril/2049',
     descricao: 'Melhor período para observação da Aurora Boreal...',
-    reservaLabel: 'Reservar 15/04', // ← bug: estava "14/04" mas o dia era 15
+    reservaLabel: 'Reservar 15/04',
   },
   {
     id: 3,
@@ -53,7 +53,10 @@ const Eventos = () => {
                 <p className="text-xl">{evento.mes}</p>
               </div>
               <p className="text-gray-300 text-balance">{evento.descricao}</p>
-              <a href="#contato" className="justify-self-start btn">
+              <a
+                href="#contato"
+                className="flex items-center justify-self-start btn"
+              >
                 {evento.reservaLabel}
               </a>
             </div>
