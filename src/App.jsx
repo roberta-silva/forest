@@ -1,4 +1,3 @@
-import './App.css';
 import Acomodacoes from './Components/Acomodacoes';
 import Ciclo from './Components/Ciclo';
 import Contato from './Components/Contato';

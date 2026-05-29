@@ -1,4 +1,4 @@
-const Textarea = (id, name, label, rows = 5) => {
+const Textarea = ({ id, name, label, rows = 5 }) => {
   return (
     <div className="grid gap-1">
       <label className="text-white" htmlFor={name}>
