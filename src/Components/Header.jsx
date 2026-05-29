@@ -53,7 +53,7 @@ const Header = () => {
 
       <button
         onClick={handleClick}
-        className="flex items-center gap-3 bg-verde-400 text-verde-900 py-2 px-4 rounded-full lg:hidden cursor-pointer"
+        className="btn flex py-1 items-center gap-3 lg:hidden "
       >
         Menu
         <span

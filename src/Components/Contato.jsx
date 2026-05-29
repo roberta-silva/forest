@@ -21,7 +21,7 @@ const Contato = () => {
         </p>
         <div className="grid gap-4">
           <div>
-            <span className="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span className="h-0.5 w-6 neon inline-block"></span>
             <h2 className="mb-2 text-2xl text-verde-300 font-serif">Base</h2>
             <p className="text-gray-300">
               Rua da Mata, 123 - Floresta Nacional - RS
@@ -29,13 +29,13 @@ const Contato = () => {
           </div>
 
           <div>
-            <span className="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span className="h-0.5 w-6 neon inline-block"></span>
             <h2 className="mb-2 text-2xl text-verde-300 font-serif">Email</h2>
             <p className="text-gray-300">contato@forest.com</p>
           </div>
 
           <div>
-            <span className="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span className="h-0.5 w-6 neon inline-block"></span>
             <h2 className="mb-2 text-2xl text-verde-300 font-serif">
               Telefone
             </h2>
@@ -62,10 +62,7 @@ const Contato = () => {
 
         <Textarea label="Mensagem" id="mensagem" name="mensagem" rows="5" />
 
-        <button
-          onClick={handleClick}
-          className="place-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full cursor-pointer"
-        >
+        <button onClick={handleClick} className="btn place-self-start">
           Enviar Email
         </button>
       </form>

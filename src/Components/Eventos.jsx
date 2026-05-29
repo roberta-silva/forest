@@ -25,7 +25,7 @@ const Eventos = () => {
             </p>
             <a
               href="#contato"
-              className="justify-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
+              className="justify-self-start btn"
             >
               Reservar 23/03
             </a>
@@ -45,7 +45,7 @@ const Eventos = () => {
             </p>
             <a
               href="#contato"
-              className="justify-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
+              className="justify-self-start btn"
             >
               Reservar 14/04
             </a>
@@ -65,7 +65,7 @@ const Eventos = () => {
             </p>
             <a
               href="#contato"
-              className="justify-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
+              className="justify-self-start btn"
             >
               Reservar 18/08
             </a>

@@ -10,7 +10,7 @@
   --color-verde-950: #030504;
 
   --animate-slide-in: slideIn 0.4s ease-in-out forwards;
-  --animate-slide-in: fadeIn 0.4s ease-in-out forwards;
+  --animate-fade-in: fadeIn 0.4s ease-in-out forwards;
 
   @keyframes slideIn {
     from {
@@ -38,6 +38,31 @@
   padding: 0 0.5rem;
   @media (width >= 40rem) {
     padding: 0 1rem;
+  }
+}
+
+@layer components {
+  .neon {
+    @apply rounded-full border border-verde-200 bg-linear-to-b from-verde-200 to-verde-400;
+    box-shadow:
+      0 1px 4px 1px theme(colors.verde.200 / 25%),
+      inset 0px -1px 2px theme(colors.verde.200);
+  }
+
+  .btn {
+    @apply rounded-full border border-verde-200 bg-linear-to-b from-verde-200 to-verde-400
+    px-5 py-2 text-verde-900 transition hover:contrast-200 cursor-pointer;
+    box-shadow:
+      0 1px 4px 1px theme(colors.verde.200 / 25%),
+      inset 0px -1px 2px theme(colors.verde.200);
+  
+  }
+  .radial-gradient {
+    background-image: radial-gradient(
+      50% 100% at 50% 0%,
+      theme(colors.verde.700) 0%,
+      theme(colors.verde.800) 100%
+    );
   }
 }
 

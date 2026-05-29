@@ -1,4 +1,5 @@
 import wildbeastImg from '../assets/img/parceiros/wildbeast.svg';
+import seta from '../assets/img/seta.svg';
 import { random } from '../Utilities/weather';
 import chuva from '../assets/videos/video_chuva.mp4';
 import sol from '../assets/videos/video_sol.mp4';
@@ -21,10 +22,11 @@ const HeroSection = () => {
         <div className="bg-verde-950/60 rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 sm:bg-verde-950 sm:inline-flex sm:flex-row sm:rounded-full">
           vagas para dezembro abertas
           <a
-            className="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
+            className="btn inline-flex items-center gap-2"
             href="/"
           >
             Reserve Hoje
+            <img src={seta} alt="" />
           </a>
         </div>
         <h1 className="mb-8 font-serif text-4xl text-balance capitalize max-w-screen-sm sm:text-5xl sm:mb-20">

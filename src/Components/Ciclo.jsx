@@ -47,7 +47,7 @@ const Ciclo = () => (
           key={titulo}
           className={`flex-1 grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform ${cardClass}`}
         >
-          <img className="bg-verde-400 rounded-full size-10" src={img} alt="" />
+          <img className="neon p-1 size-10" src={img} alt="" />
           <h3 className="font-serif text-2xl text-white">{titulo}</h3>
           <p className="text-gray-400">{descricao}</p>
           <span className="text-verde-300">{horario}</span>
